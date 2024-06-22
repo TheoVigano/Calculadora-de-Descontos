@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descontos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Desconto</h1>
+        <form id="discountForm">
+            <label for="productName">Produto:</label>
+            <input type="text" id="productName" required>
+
+            <label for="originalPrice">Valor Original do Produto:</label>
+            <input type="number" id="originalPrice" step="0.01" required>
+
+            <label for="discountPercentage">Percentual de Desconto:</label>
+            <input type="number" id="discountPercentage" min="0" max="100" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result">
+            <p><strong>Nome do Produto:</strong> <span id="resultProductName"></span></p>
+            <p><strong>Valor do Desconto:</strong> R$ <span id="discountValue"></span></p>
+            <p><strong>Valor Final do Produto:</strong> R$ <span id="finalPrice"></span></p>
+            <button id="resetButton">Reiniciar</button>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
